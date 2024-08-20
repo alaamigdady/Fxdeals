@@ -117,7 +117,8 @@ In the init.sql script, there are some currencies added for testing purposes, if
  **Clone the Repository**:
    ```bash
    git clone https://github.com/alaamigdady/Fxdeals.git
-   cd fxdeals
+   cd Fxdeals
+   mvn clean package
    docker-compose up --build
    
    
