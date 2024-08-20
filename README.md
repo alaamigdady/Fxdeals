@@ -127,7 +127,11 @@ Number of validations are performed on the deal, such as:
    cd Fxdeals
    mvn clean package
    docker-compose up --build
-   
+
+ **Using Makefile**:
+   make build
+   make run
+
    
 ## How to Run the APIs
 ### 1. **POST /fxdeals/api/deals/addBatch**
