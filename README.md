@@ -128,9 +128,6 @@ Number of validations are performed on the deal, such as:
    mvn clean package
    docker-compose up --build
 
- **Using Makefile**:
-   make build
-   make run
 
    
 ## How to Run the APIs
@@ -167,5 +164,6 @@ A `Makefile` is included in the project to automate common tasks such as buildin
 - **Build the Project**:
   ```bash
   make build
+   make run
  
    
