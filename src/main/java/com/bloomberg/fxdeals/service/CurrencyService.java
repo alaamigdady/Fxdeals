@@ -25,10 +25,10 @@ public class CurrencyService {
 	public Currency saveCurrency(Currency currency) {
 		try {
 			Currency savedCurrency = currencyRepository.save(currency);
-			logger.info("Currency saved to database and cached: {}", savedCurrency.getCurrencyCode());
+			logger.info("Currency saved to database : {}", savedCurrency.getCurrencyCode());
 			return savedCurrency;
 		} catch (Exception e) {
-			logger.error("Error saving currency with code: {}", currency.getCurrencyCode(), e);
+			logger.error("Error saving currency with : {}", e);
 			throw e;
 		}
 	}
