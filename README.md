@@ -58,6 +58,13 @@ In the init.sql script, there are some currencies added for testing purposes, if
 ### 2. **POST /fxdeals/api/deals/addDeal**
    - **Description**: Processes and stores a single FX deal.
    - **Input**: JSON body with the deal details.
+## Deal Validation 
+Number of validations are performed on the deal, such as:
+- missing fields validation
+- type of fields validation
+- valid from/to currencies according to ISO 4217 currency codes validation
+- positive amount of deal validation
+- different from and to currencies validation
 
 ## Unit Tests Available
 
