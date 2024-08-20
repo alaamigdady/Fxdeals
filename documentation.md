@@ -116,7 +116,7 @@ In the init.sql script, there are some currencies added for testing purposes, if
 
  **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/fxdeals.git
+   git clone https://github.com/alaamigdady/Fxdeals.git
    cd fxdeals
    docker-compose up --build
    
@@ -126,8 +126,7 @@ In the init.sql script, there are some currencies added for testing purposes, if
 
 curl -X POST -F "file=@sample-deals.csv" http://localhost:8080/fxdeals/api/deals/batch
 - **sample-deals.csv**: 
-deal6,AUD,EUR,2024-08-20 12:30:00,1000.00
-deal7,GBP,USD,2024-08-20 13:30:00,1500.50
+existed in the root directory
 
 
 - **Expected Response**: 
