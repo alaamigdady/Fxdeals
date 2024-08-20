@@ -20,7 +20,7 @@ The database consists of two main tables:
 ### 1. `currency`
 - **currency_id (SERIAL PRIMARY KEY)**: A unique identifier for each currency.
 - **currency_code (VARCHAR(3) UNIQUE NOT NULL)**: The ISO 4217 currency code (e.g., USD, EUR).
-- **currency_name (VARCHAR(255) NOT NULL)**: The full name of the currency (e.g., United States Dollar).
+- **currency_name (VARCHAR(255) )**: The full name of the currency (e.g., United States Dollar).
 - **currency_symbol (VARCHAR(3))**: Optional symbol for the currency (e.g., $).
 
 ### 2. `deal`
