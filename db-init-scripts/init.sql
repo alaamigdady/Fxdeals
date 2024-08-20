@@ -1,8 +1,8 @@
 CREATE TABLE currency (
     currency_id SERIAL PRIMARY KEY,                      -- Auto-incremented unique identifier for each currency
-    currency_code VARCHAR(3) UNIQUE NOT NULL,               -- ISO 4217 currency code (e.g., USD, EUR)
-    currency_name VARCHAR(255) NOT NULL,             -- Full name of the currency (e.g., United States Dollar)
-    currency_symbol VARCHAR(3)                       -- Optional: Symbol of the currency (e.g., $)
+    currency_code VARCHAR(3) UNIQUE NOT NULL,            -- ISO 4217 currency code (e.g., USD, EUR)
+    currency_name VARCHAR(255),                         -- Full name of the currency (e.g., United States Dollar)
+    currency_symbol VARCHAR(3)                          -- Optional: Symbol of the currency (e.g., $)
 );
 
 CREATE TABLE deal (
