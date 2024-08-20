@@ -208,6 +208,8 @@ public class DealService {
 			Currency fromCurrency = currencyService.getCurrencyByCode(fromCurrencyCode);
 
 			if (fromCurrency == null) {
+				fromCurrency = new Currency();
+				fromCurrency.setCurrencyCode(fromCurrencyCode);
 				fromCurrency = currencyService.saveCurrency(fromCurrency);
 			}
 			deal.setFromCurrency(fromCurrency);
@@ -218,6 +220,8 @@ public class DealService {
 			}
 			Currency toCurrency = currencyService.getCurrencyByCode(toCurrencyCode);
 			if (toCurrency == null) {
+				toCurrency = new Currency();
+				toCurrency.setCurrencyCode(toCurrencyCode);
 				toCurrency = currencyService.saveCurrency(toCurrency);
 			}
 			deal.setToCurrency(toCurrency);
