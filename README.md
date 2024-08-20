@@ -125,7 +125,7 @@ In the init.sql script, there are some currencies added for testing purposes, if
 ## How to Run the APIs
 ### 1. **POST /fxdeals/api/deals/addBatch**
 
-curl -X POST -F "file=@sample-deals.csv" http://localhost:8080/fxdeals/api/deals/batch
+curl -X POST -F "file=@sample-deals.csv" http://localhost:8080/fxdeals/api/deals/addBatch
 - **sample-deals.csv**: 
 existed in the root directory
 
